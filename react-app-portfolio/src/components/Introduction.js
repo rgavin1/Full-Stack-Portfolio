@@ -6,7 +6,7 @@ const Introduction = () => {
         <Container >
             <h1>Introduction</h1>
             <Row>
-                <Col md={4}>
+                <Col xs={12} sm={12} md={4}>
                 <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -20,7 +20,7 @@ const Introduction = () => {
                 </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col xs={12} sm={12} md={4} >
                 <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -34,7 +34,7 @@ const Introduction = () => {
                 </Card.Body>
                 </Card>
                 </Col>
-                <Col md={4}>
+                <Col xs={12} sm={12} md={4} >
                 <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>

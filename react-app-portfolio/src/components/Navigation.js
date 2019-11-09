@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 const Navigation = () => {
     return (
 <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">Ramsey Gavin's Portfolio</Navbar.Brand>
+  <Navbar.Brand href="#home">Ramsey Gavin</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">

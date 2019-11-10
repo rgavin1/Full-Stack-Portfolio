@@ -6,9 +6,9 @@ import '../styles/Projects.css';
 
 const Projects = () => {
     return (
-        <Container>
-            <h3>Projects</h3>
-            <Row>
+        <Container >
+            <h3 className="text-center border-bottom py-3">Projects</h3>
+            <Row className="py-3">
                 <Col className="project" sm={12} md={4}>
                     <Image src={Img1} fluid />
                     <div className="projectOverlay text-center" >

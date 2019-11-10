@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Navigation = () => {
     return (
@@ -18,6 +19,14 @@ const Navigation = () => {
         <NavDropdown.Item href="#action/3.3">Monthly Budget Application</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="#memes">Contact</Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link href="#deets" style={{
+        fontSize: '1.15em'
+      }}><FontAwesomeIcon icon={faLinkedin}/></Nav.Link>
+      <Nav.Link href="#memes" style={{
+        fontSize: '1.15em'
+      }}><FontAwesomeIcon icon={faGithubSquare}/></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

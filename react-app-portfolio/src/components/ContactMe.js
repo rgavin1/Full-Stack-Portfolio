@@ -11,6 +11,7 @@ class ContactMe extends Component {
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.deleteForm = this.deleteForm.bind(this);
   }
 
   handleChange(e){
@@ -24,9 +25,17 @@ class ContactMe extends Component {
     console.log(this.state);
   }
 
+  deleteForm(){
+    this.setState({
+      name: '',
+      email: '',
+      message: ''
+    });
+  }
+
   render(){
     return (
-      <Form className="container" onSubmit={this.handleSubmit}>
+      <Form className="container" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Your Name</Form.Label>
           <Form.Control 
@@ -60,10 +69,8 @@ class ContactMe extends Component {
           required 
           />
         </Form.Group>
-        <Container className="d-flex justify-content-start">
-        <Button variant="success" type="submit" className="w-50 h-50">Send</Button>
-        <Button type="reset"  >Clear</Button>
-        </Container>
+        <Button variant="success" type="submit" style={{width: '200px', marginRight: '10px'}}>Send</Button>
+        <Button variant="danger" type="reset">Clear</Button>
       </Form>
   )};
 };

@@ -4,7 +4,7 @@ import '../styles/Hero.css';
 
 const Hero = () => {
     return (
-        <Jumbotron fluid className="bgImage">
+        <Jumbotron fluid >
             <Container>
                 <h1>Fluid jumbotron</h1>
                 <blockquote className="blockquote mb-0">

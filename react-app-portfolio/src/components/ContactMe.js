@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Container } from 'react-bootstrap';
 
 class ContactMe extends Component {
   constructor(props){
@@ -60,7 +60,10 @@ class ContactMe extends Component {
           required 
           />
         </Form.Group>
-        <Button type="submit" block>Send</Button>
+        <Container className="d-flex justify-content-start">
+        <Button variant="success" type="submit" className="w-50 h-50">Send</Button>
+        <Button type="reset"  >Clear</Button>
+        </Container>
       </Form>
   )};
 };

@@ -1,28 +1,42 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import Img1 from '../assets/fall-1072821_640.jpg';
+import Img2 from '../assets/bench-560435_640.jpg';
+import '../styles/Projects.css';
 
 const Projects = () => {
-    const projectContainer = {
-        minHeight: '400px',
-        maxHeight: '10em'
-    }
     return (
         <Container>
             <h3>Projects</h3>
-            <Row style={projectContainer}>
-                <Col xs={12} sm={12} md={4} className="bg-primary">1/1</Col>
-                <Col xs={12} sm={12} md={4} className="bg-info">1/2</Col>
-                <Col xs={12} sm={12} md={4} className="bg-danger">1/3</Col>
-            </Row>
-            <Row style={projectContainer}>
-                <Col xs={12} sm={12} md={4} className="bg-light">2/1</Col>
-                <Col xs={12} sm={12} md={4} className="bg-warning">2/2</Col>
-                <Col xs={12} sm={12} md={4} className="bg-success">2/3</Col>
-            </Row>
-            <Row style={projectContainer}>
-                <Col xs={12} sm={12} md={4} className="bg-danger">3/1</Col>
-                <Col xs={12} sm={12} md={4} className="bg-dark">3/2</Col>
-                <Col xs={12} sm={12} md={4} className="bg-primary">3/3</Col>
+            <Row>
+                <Col className="project" sm={12} md={4}>
+                    <Image src={Img1} fluid />
+                    <div className="projectOverlay text-center" >
+                        <h4>Real Estate Application</h4>
+                        <p>content</p>
+                    </div>
+                </Col>
+                <Col className="project" sm={12} md={4}>
+                    <Image src={Img2} fluid />
+                    <div className="projectOverlay text-center">
+                        <h4>Kent State Parking Meter</h4>
+                        <p>content</p>
+                    </div>
+                </Col>
+                <Col className="project" sm={12} md={4}>
+                    <Image src={Img2} fluid />
+                    <div className="projectOverlay text-center">
+                        <h4>Web Development Portfolio</h4>
+                        <p>content</p>
+                    </div>
+                </Col>
+                <Col className="project" sm={12} md={4}>
+                    <Image src={Img2} fluid />
+                    <div className="projectOverlay text-center">
+                        <h4>Monthly Budget Application</h4>
+                        <p>In Progress</p>
+                    </div>
+                </Col>
             </Row>
         </Container>
     )

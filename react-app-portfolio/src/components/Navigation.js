@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 
 const Navigation = () => {
@@ -11,7 +11,12 @@ const Navigation = () => {
     <Nav className="mr-auto">
       <Nav.Link href="#features">Home</Nav.Link>
       <Nav.Link href="#pricing">About</Nav.Link>
-      <Nav.Link href="#deets">Projects</Nav.Link>
+      <NavDropdown title="Projects" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Real Estate Application</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Kent State Parking Meter</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Web Development Portfolio</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Monthly Budget Application</NavDropdown.Item>
+      </NavDropdown>
       <Nav.Link href="#memes">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>

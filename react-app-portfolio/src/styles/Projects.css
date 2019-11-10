@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+.project {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projectOverlay {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    padding: 2em 0;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    background-color: hsla(219, 39%, 44%, 0.527);
+    opacity: 0;
+    transform: translate(-20%, -100%); 
+    transition: all 0.2s ease-in;
+}
+
+.project:hover > .projectOverlay {
+    transform: translate(0%, -100%);
+    opacity: 1;
+    left: 0;
+}

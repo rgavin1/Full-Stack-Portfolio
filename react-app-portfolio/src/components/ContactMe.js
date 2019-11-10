@@ -35,7 +35,8 @@ class ContactMe extends Component {
 
   render(){
     return (
-      <Form className="container" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
+      <Container className="d-flex bg-light py-4 justify-content-around" fluid>
+      <Form className="container border-right px-3" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Your Name</Form.Label>
           <Form.Control 
@@ -72,6 +73,10 @@ class ContactMe extends Component {
         <Button variant="success" type="submit" style={{width: '200px', marginRight: '10px'}}>Send</Button>
         <Button variant="danger" type="reset">Clear</Button>
       </Form>
+        <Container className="text-center">
+          <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ramsey-gavin"><a class="LI-simple-link" href='https://www.linkedin.com/in/ramsey-gavin?trk=profile-badge'>Ramsey Gavin</a></div>
+        </Container>
+      </Container>
   )};
 };
 

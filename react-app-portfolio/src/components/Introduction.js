@@ -19,7 +19,7 @@ const Introduction = () => {
                 fontWeight: '400',
                 letterSpacing: '.08em',
                 fontSize: '1.1em'
-            }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas pretium aenean pharetra. Vitae tempus quam pellentesque nec nam aliquam sem et. Eget duis at tellus at urna condimentum mattis pellentesque id. Donec enim diam vulputate ut pharetra sit. Turpis egestas pretium aenean pharetra magna. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Lacinia at quis risus sed vulputate odio ut. Volutpat diam ut venenatis tellus in metus vulputate eu. Pharetra pharetra massa massa ultricies mi quis. Urna nunc id cursus metus aliquam eleifend mi. Adipiscing commodo elit at imperdiet dui. Hendrerit dolor magna eget est lorem. Mattis rhoncus urna neque viverra justo nec.</p>
+            }}>Ramsey Gavin loves coding, photography, fitness and finding new challenges. He does not enjoy talking about himself in the 3rd person. He currently serves as a shipping clerk at KaneIsAble. Ramsey is currently teaching himself Reactjs. In May 2019, he earned a BS in Digital Science and an Associates of Science from Kent State University. For more info, please check out his projects.</p>
             <h3>Skills</h3>
             <Row className="m-auto">
                 <Col xs={12} sm={12} md={true} lg={true}>

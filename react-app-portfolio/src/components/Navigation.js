@@ -21,12 +21,16 @@ const Navigation = () => {
       <Nav.Link href="#memes">Contact</Nav.Link>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets" style={{
-        fontSize: '1.15em'
-      }}><FontAwesomeIcon icon={faLinkedin}/></Nav.Link>
-      <Nav.Link href="#memes" style={{
-        fontSize: '1.15em'
-      }}><FontAwesomeIcon icon={faGithubSquare}/></Nav.Link>
+      <Nav.Link href="https://www.linkedin.com/in/ramsey-gavin" target="blank" style={{
+        fontSize: '1.75em'
+      }}>
+        <FontAwesomeIcon icon={faLinkedin}/>
+      </Nav.Link>
+      <Nav.Link href="https://github.com/rgavin1" target="blank" style={{
+        fontSize: '1.75em'
+      }}>
+        <FontAwesomeIcon icon={faGithubSquare}/>
+      </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>

@@ -5,18 +5,15 @@ import '../styles/Hero.css';
 const Hero = () => {
     return (
         <Jumbotron fluid >
-            <Container>
-                <h1>Fluid jumbotron</h1>
+            <Container className="text-center">
+                <h3>Hello, I'm Ramsey Gavin.</h3>
                 <blockquote className="blockquote mb-0">
                     <p style={{
                     fontSize: '30px',
                     fontWeight: '300'
                     }}>
-                Do not go where the path may lead, go instead where there is no path and leave a trail.
+                I'm a full-stack web developer.
                 </p>
-                <footer className="blockquote-footer">
-                Ralph Waldo Emerson <cite title="Source Title">Source Title</cite>
-      </footer>
                 </blockquote>
             </Container>
         </Jumbotron>

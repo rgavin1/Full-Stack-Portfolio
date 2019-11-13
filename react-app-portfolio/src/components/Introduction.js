@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Card, Row, Col, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { TweenMax, Power3 } from 'gsap';
 import { 
     faMobileAlt, 
     faTabletAlt, 
@@ -10,12 +11,20 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Introduction = () => {
+    let header = useRef(null);
+
+    useEffect(() => {
+        TweenMax.to(header, .8, {opacity: 1, ease: Power3.easeInOut, delay: 1})
+    }, [])
+
     return (
         <Container style={{
             height: '80%'
         }}>
             <Container className="text-justify my-5">
-            <h3 className="text-center border-bottom py-3">About Me</h3>
+            <h3 ref={(element) => header = element } style={{
+                opacity: '0'
+            }} className="text-center border-bottom py-3">About Me</h3>
             <p style={{
                 lineHeight: '1.7em',
                 fontWeight: '400',

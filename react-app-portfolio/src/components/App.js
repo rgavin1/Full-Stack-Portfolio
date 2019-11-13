@@ -1,24 +1,28 @@
 import React from 'react';
 import Navigation from './Navigation';
-import Projects from './Projects';
-import ContactMe from './ContactMe';
 import Footer from './Footer';
-import Introduction from './Introduction';
-import Hero from './Hero';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Main from './Main';
+import RealEstateProj from './RealEstateProject';
+import CapstoneProj from './KentState';
+import PortfolioProj from './FullStack';
+import RestaurantProj from './RestaurantProj';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Router>
-        <Navigation />
-        <Hero />
-        <Introduction />
-        <Projects />
-        <ContactMe />
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <div className="App">
+          <Navigation />
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/RealEstateProj" component={RealEstateProj} />
+            <Route path="/CapstoneProj" component={CapstoneProj} />
+            <Route path="/PortfolioProj" component={PortfolioProj} />
+            <Route path="/RestaurantProj" component={RestaurantProj} />
+          </Switch>
+          <Footer />
+      </div>
+    </Router>
   );
 }
 

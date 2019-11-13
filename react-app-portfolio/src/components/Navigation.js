@@ -2,32 +2,56 @@ import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
 <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">Ramsey Gavin</Navbar.Brand>
+  <Navbar.Brand title="Ramsey Gavin">
+    <Link to="/">Ramsey Gavin</Link>
+  </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Home</Nav.Link>
-      <Nav.Link href="#pricing">About</Nav.Link>
+      <Nav.Link title="Home">
+        <Link to="/">Home</Link>
+      </Nav.Link>
+      <Nav.Link title="About">
+        <Link to="/About">About</Link>
+      </Nav.Link>
       <NavDropdown title="Projects" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Real Estate Application</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Kent State Parking Meter</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Web Development Portfolio</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Monthly Budget Application</NavDropdown.Item>
+        <NavDropdown.Item title="Real Estate Application" >
+          <Link to="/RealEstateProj">Real Estate Application</Link>
+        </NavDropdown.Item>
+        <NavDropdown.Item title="Kent State Parking Meter" >
+          <Link to="/CapstoneProj">Kent State Parking Meter</Link>
+        </NavDropdown.Item>
+        <NavDropdown.Item title="Restaurant Project" >
+          <Link to="/RestaurantProj">Restaurant Project</Link>
+        </NavDropdown.Item>
+        <NavDropdown.Item title="Web Development Portfolio" >
+          <Link to="/PortfolioProj">Web Development Portfolio</Link>
+        </NavDropdown.Item>
+        <NavDropdown.Item title="Monthly Budget Application" >
+          <Link to="/">Monthly Budget Application</Link>
+        </NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="#memes">Contact</Nav.Link>
     </Nav>
     <Nav>
       <NavDropdown.Divider />
-      <Nav.Link href="https://www.linkedin.com/in/ramsey-gavin" target="blank" style={{
+      <Nav.Link title="Resume" href="https://docs.google.com/document/d/1C3GWuIw0NWx_ybZs0xqecSB1Rx6zQeBp2pT3a9esG5o/edit" target="blank" style={{
+        fontSize: '1.75em'
+      }}>
+        <FontAwesomeIcon icon={faFile}/>
+      </Nav.Link>
+      <Nav.Link title="LinkedIn" href="https://www.linkedin.com/in/ramsey-gavin" target="blank" style={{
         fontSize: '1.75em'
       }}>
         <FontAwesomeIcon icon={faLinkedin}/>
       </Nav.Link>
-      <Nav.Link href="https://github.com/rgavin1" target="blank" style={{
+      <Nav.Link title="Github" href="https://github.com/rgavin1" target="blank" style={{
         fontSize: '1.75em'
       }}>
         <FontAwesomeIcon icon={faGithubSquare}/>

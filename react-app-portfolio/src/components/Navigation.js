@@ -21,6 +21,7 @@ const Navigation = () => {
       <Nav.Link href="#memes">Contact</Nav.Link>
     </Nav>
     <Nav>
+      <NavDropdown.Divider />
       <Nav.Link href="https://www.linkedin.com/in/ramsey-gavin" target="blank" style={{
         fontSize: '1.75em'
       }}>

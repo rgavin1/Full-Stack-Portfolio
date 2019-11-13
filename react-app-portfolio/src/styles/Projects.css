@@ -3,11 +3,11 @@
     height: 300px;
     overflow: hidden;
     cursor: pointer;
-    padding-top: 25px;
+    margin-top: 25px;
+    border: black solid 0.1px;
 }
 
 
 .projectStyles:hover {
-    background-color: green;
-    z-index: 9999;
+    
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
+import '../styles/ContactMe.css';
 
 class ContactMe extends Component {
   constructor(props){
@@ -35,7 +36,7 @@ class ContactMe extends Component {
 
   render(){
     return (
-      <Container className="d-flex bg-light py-4 justify-content-around" fluid>
+      <Container className="mobileForm d-flex py-4 justify-content-around" >
         <h2 className="px-5 text-center">Lets Connect!</h2>
       <Form className="container border-right border-left px-3" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
         <Form.Group controlId="exampleForm.ControlInput1">
@@ -74,8 +75,12 @@ class ContactMe extends Component {
         <Button variant="success" type="submit" style={{width: '200px', marginRight: '10px'}}>Send</Button>
         <Button variant="danger" type="reset">Clear</Button>
       </Form>
-        <Container className="text-center">
-          <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ramsey-gavin"><a class="LI-simple-link" href='https://www.linkedin.com/in/ramsey-gavin?trk=profile-badge'>Ramsey Gavin</a></div>
+        <Container className="text-center mt-5">
+          <div className="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="ramsey-gavin">
+            <a class="shadow LI-simple-link" href='https://www.linkedin.com/in/ramsey-gavin?trk=profile-badge'>
+              Ramsey Gavin
+            </a>
+          </div>
         </Container>
       </Container>
   )};

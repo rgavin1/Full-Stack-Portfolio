@@ -6,25 +6,25 @@ import webPortfolioImage from '../assets/Web Developer Portfolio.png';
 import '../styles/Projects.css';
 
 const Projects = () => {
+
     return (
         <Container> 
             <h3 className="text-center">Projects</h3>
             <hr className="py-3" />
             <Container className="d-flex justify-content-around flex-wrap">
-            <div className="projectStyles" >
+            <div className="projectStyles shadow rounded" >
                 <Image src={realEstateImage} fluid />
                 <div className="overlay">
                 <h4>Title</h4>
                 <p>Technologies Used</p>
                 </div>
             </div>
-            <div className="projectStyles">
+            <div className="projectStyles shadow rounded" rounded>
                 <Image src={capstoneProjectImage} fluid />
             </div>
-            <div className="projectStyles">
+            <div className="projectStyles shadow rounded" rounded>
                 <Image src={webPortfolioImage} fluid />
             </div>
-            <div className="projectStyles" className="bg-light"></div>
             </Container>
             <hr className="py-3" />
         </Container>

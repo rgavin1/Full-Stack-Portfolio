@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
 <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Container>
   <Navbar.Brand title="Ramsey Gavin">
     <Link to="/">Ramsey Gavin</Link>
   </Navbar.Brand>
@@ -58,6 +59,7 @@ const Navigation = () => {
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
+  </Container>
 </Navbar>
     )
 }

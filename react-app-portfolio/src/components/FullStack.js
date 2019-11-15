@@ -5,8 +5,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/FullStack.css';
 import ScreenShot from '../assets/Web Developer Portfolio.png';
+import BootstrapLogo from '../assets/bootstrap-solid.svg';
+import ReactLogo from '../assets/reactjs-icon.svg';
 
 const FullStack = () => {
+    const technologiesStyle = {
+        height: '25px',
+        width: '25px'
+    }
     return (
         <Container className="d-flex projectContainer">
         <Container className="my-auto">
@@ -19,23 +25,23 @@ const FullStack = () => {
                backgroundSize: 'contain',
                backgroundRepeat: 'no-repeat',
                backgroundPosition: 'center'
-       }}>Img</div>
+       }}></div>
        <hr className="mt-4"/>
        <Container className="d-flex justify-content-around">
-       <Button title="View" href="" >
-           <FontAwesomeIcon style={{
-               fontSize: '30px'
-           }} icon={faEye} />
-       </Button>
-       <Button title="Repository" href="" >
-           <FontAwesomeIcon style={{
-               fontSize: '30px'
-           }} icon={faGithub} />
-       </Button>
+       <Button title="View" href="" className="d-flex">
+               <FontAwesomeIcon style={{
+                   fontSize: '30px'
+               }} icon={faEye} /><div className="my-auto ml-2">View</div>
+           </Button>
+           <Button title="Repository" href="" className="d-flex">
+               <FontAwesomeIcon style={{
+                   fontSize: '30px'
+               }} icon={faGithub} /><div className="my-auto ml-2">Github</div>
+           </Button>
        </Container>
        <hr className="mt-4" />
        <h3>Description</h3>
-       <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Amet mauris commodo quis imperdiet massa tincidunt. Gravida rutrum quisque non tellus orci. Fusce ut placerat orci nulla. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt.
+       <p className="text-justify">This web portfolio is an extension of Ramsey's resume. This site provides a convenient way for potential employers' to view projects and inspect code while also allowing Ramsey to expand his skills.
        </p>
        </Container>
        <Container className="my-auto pt-3">
@@ -77,37 +83,11 @@ const FullStack = () => {
        </Container>
        <hr className="mt-4" />
        <h5 className="text-center mb-3">Technologies</h5>
-       <div className="d-flex justify-content-between">
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>1</div>
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>2</div>
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>3</div>
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>4</div>
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>5</div>
-           <div style={{
-               width: '40px',
-               height: '40px',
-               backgroundColor: 'darkgray'
-           }}>6</div>
+       <div className="d-flex justify-content-around">
+        <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
+        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
+        <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
+        <img style={technologiesStyle} src={ReactLogo} alt="Reactjs Logo" title="React" />
        </div>
        </Container>
     </Container>

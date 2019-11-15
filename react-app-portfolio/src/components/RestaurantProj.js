@@ -5,8 +5,14 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RestaurantProj.css';
 import ScreenShot from '../assets/Resturant.png';
+import BootstrapLogo from '../assets/bootstrap-solid.svg';
+import ReactLogo from '../assets/reactjs-icon.svg';
 
 const RestaurantProj = () => {
+    const technologiesStyle = {
+        height: '25px',
+        width: '25px'
+    }
     return (
         <Container className="d-flex projectContainer">
             <Container className="my-auto">
@@ -22,15 +28,15 @@ const RestaurantProj = () => {
            }}></div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
-           <Button title="View" href="" >
+           <Button title="View" href="" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
-               }} icon={faEye} />
+               }} icon={faEye} /><div className="my-auto ml-2">View</div>
            </Button>
-           <Button title="Repository" href="" >
+           <Button title="Repository" href="" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
-               }} icon={faGithub} />
+               }} icon={faGithub} /><div className="my-auto ml-2">Github</div>
            </Button>
            </Container>
            <hr className="mt-4" />
@@ -77,37 +83,12 @@ const RestaurantProj = () => {
            </Container>
            <hr className="mt-4" />
            <h5 className="text-center mb-3">Technologies</h5>
-           <div className="d-flex justify-content-between">
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>1</div>
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>2</div>
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>3</div>
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>4</div>
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>5</div>
-               <div style={{
-                   width: '40px',
-                   height: '40px',
-                   backgroundColor: 'darkgray'
-               }}>6</div>
+           <div className="d-flex justify-content-around">
+           <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
+        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
+        <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
+        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />
+        <img style={technologiesStyle} src={ReactLogo} alt="Reactjs Logo" title="React" />
            </div>
            </Container>
         </Container>

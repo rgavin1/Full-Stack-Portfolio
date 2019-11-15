@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { Jumbotron, Container } from 'react-bootstrap';
 import '../styles/Hero.css';
 import { TweenMax, Power3 } from 'gsap';
+import ProfilePic from '../assets/profile pic.jpg';
 
 const Hero = () => {
     let jumbotron = useRef(null);
@@ -14,7 +15,15 @@ const Hero = () => {
 
     return (
         <Jumbotron fluid ref={(element) => jumbotron = element }>
-            <Container className="text-center" ref={(element) => into = element}>
+            <Container className="d-flex justify-content-center profilePic" ref={(element) => into = element}>
+                <div style={{
+                    width: '175px',
+                    height: '175px',
+                    backgroundImage: `url(${ProfilePic})`,
+                    borderRadius: '100%',
+                    backgroundPosition: 'auto'
+                }}></div>
+                <div className="my-auto ml-5">
                 <h3>Hello, I'm Ramsey Gavin.</h3>
                 <blockquote className="blockquote mb-0">
                     <p style={{
@@ -24,6 +33,7 @@ const Hero = () => {
                 I'm a full-stack web developer.
                 </p>
                 </blockquote>
+                </div>
             </Container>
         </Jumbotron>
     )

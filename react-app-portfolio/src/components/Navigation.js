@@ -33,8 +33,8 @@ const Navigation = () => {
         <NavDropdown.Item title="Web Development Portfolio" >
           <Link to="/PortfolioProj">Web Development Portfolio</Link>
         </NavDropdown.Item>
-        <NavDropdown.Item title="Monthly Budget Application" >
-          <Link to="/">Monthly Budget Application</Link>
+        <NavDropdown.Item title="Monthly Budget Application" className="text-muted">
+          <Link to="#">Monthly Budget Application</Link>
         </NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="#memes">Contact</Nav.Link>

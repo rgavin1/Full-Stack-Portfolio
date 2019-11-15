@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TweenMax, Power3 } from 'gsap';
 import { 
     faMobileAlt, 
-    faTabletAlt, 
     faDesktop,
     faTachometerAlt,
     faUniversalAccess

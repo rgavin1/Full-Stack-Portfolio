@@ -17,7 +17,7 @@ const RestaurantProj = () => {
         <Container className="d-flex projectContainer">
             <Container className="my-auto">
            <h2 className="text-center" >Barroco</h2>
-           <div style={{
+           <div className="shadow" style={{
                backgroundImage: `url(${ScreenShot})`,
                height: '280px',
                margin: '0px auto',

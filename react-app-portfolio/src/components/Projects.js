@@ -3,8 +3,9 @@ import { Container, Image } from 'react-bootstrap';
 import realEstateImage from '../assets/real estate web page.png';
 import capstoneProjectImage from '../assets/Capstone.png';
 import webPortfolioImage from '../assets/Web Developer Portfolio.png';
+import RestaurantScreenShot from '../assets/Resturant.png';
 import '../styles/Projects.css';
-import { TweenMax, Power3 } from 'gsap';
+import { TweenMax } from 'gsap';
 
 
 const Projects = () => {
@@ -17,7 +18,7 @@ const Projects = () => {
     }, []);
     return (
         <Container> 
-            <h3 className="text-center">Projects</h3>
+            <h3 className="text-center my-4">Projects</h3>
             <hr className="py-3" />
             <Container className="d-flex justify-content-around flex-wrap">
             <div ref={(element) => leftSide = element} title="Real Estate Project" className="projectStyles shadow rounded" >
@@ -34,7 +35,7 @@ const Projects = () => {
                 <Image src={webPortfolioImage} fluid />
             </div>
             <div title="Restaurant Project" className="projectStyles shadow rounded" rounded>
-                <Image src={webPortfolioImage} fluid />
+                <Image src={RestaurantScreenShot} fluid />
             </div>
             </Container>
             <hr className="py-3" />

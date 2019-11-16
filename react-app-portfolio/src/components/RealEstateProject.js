@@ -17,7 +17,7 @@ const RealEstateProject = () => {
         <Container className="d-flex projectContainer">
             <Container className="my-auto">
            <h2 className="text-center" >Nest</h2>
-           <div style={{
+           <div className="shadow" style={{
                backgroundImage: `url(${Pic})`,
                height: '240px',
                margin: '0px auto',

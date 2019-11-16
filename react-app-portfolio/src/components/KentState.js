@@ -14,7 +14,7 @@ const KentState = () => {
         <Container className="d-flex projectContainer">
             <Container className="my-auto">
            <h2 className="text-center" >Kent State University Parking Meter Application (Capstone Project)</h2>
-           <div style={{
+           <div className="shadow" style={{
                backgroundImage: `url(${ScreenShot})`,
                height: '243px',
                margin: '0px auto',

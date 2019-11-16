@@ -1,16 +1,17 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container, Image } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/favicon-32x32.png';
 
 const Navigation = () => {
     return (
 <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
   <Navbar.Brand title="Ramsey Gavin">
-    <Link to="/">Ramsey Gavin</Link>
+    <Link to="/"><Image src={Logo} /></Link>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">

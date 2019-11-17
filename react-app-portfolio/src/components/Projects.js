@@ -17,7 +17,7 @@ const Projects = () => {
         TweenMax.from(rightSide, .8, { x: '100%', opacity: 0, delay: 3 });
     }, []);
     return (
-        <Container> 
+        <Container id="projects"> 
             <h3 className="text-center my-4">Projects</h3>
             <hr className="py-3" />
             <Container className="d-flex justify-content-around flex-wrap">

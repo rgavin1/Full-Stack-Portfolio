@@ -29,7 +29,8 @@ const Introduction = () => {
                 fontWeight: '400',
                 letterSpacing: '.08em',
                 fontSize: '1.1em'
-            }}>Ramsey Gavin loves coding, photography, fitness and finding new challenges. He does not enjoy talking about himself in the 3rd person. He currently serves as a shipping clerk at KaneIsAble. Ramsey is currently teaching himself Reactjs. In May 2019, he earned a BS in Digital Science and an Associates of Science from Kent State University. For more info, please check out his projects.</p>
+            }}>I am a current Kent State University grad and web developer from Akron, Ohio. I enjoy creating and developing responsive websites and web applications. Currently, I have completed three applications using the frontend technology Reactjs, with one of those being constructed using the M.E.R.N stack. I am a driven and dedicated individual with dreams of becoming a  Full-Stack Developer. -- <a href="#projects" >Check out my projects.</a>
+            </p>
             <Row className="m-auto pt-3">
                 <Col xs={12} sm={12} md={true} lg={true}>
                 <Card style={{

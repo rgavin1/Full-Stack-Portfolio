@@ -19,9 +19,7 @@ const Navigation = () => {
       <Nav.Link title="Home">
         <Link to="/">Home</Link>
       </Nav.Link>
-      <Nav.Link title="About">
-        <Link to="/About">About</Link>
-      </Nav.Link>
+      <Nav.Link title="About" href="#projects">About</Nav.Link>
       <NavDropdown title="Projects" id="collasible-nav-dropdown">
         <NavDropdown.Item title="Real Estate Application" >
           <Link to="/RealEstateProj">Real Estate Application</Link>
@@ -39,12 +37,12 @@ const Navigation = () => {
           <Link to="#">Monthly Budget Application</Link>
         </NavDropdown.Item>
       </NavDropdown>
-      <Nav.Link href="#memes">Contact</Nav.Link>
+      <Nav.Link href="#contact">Contact</Nav.Link>
     </Nav>
     <Nav>
       <NavDropdown.Divider />
       <Nav.Link title="Resume" href="https://docs.google.com/document/d/1C3GWuIw0NWx_ybZs0xqecSB1Rx6zQeBp2pT3a9esG5o/edit" target="blank" style={{
-        fontSize: '1.75em'
+        fontSize: '1.7em'
       }}>
         <FontAwesomeIcon icon={faFile}/>
       </Nav.Link>

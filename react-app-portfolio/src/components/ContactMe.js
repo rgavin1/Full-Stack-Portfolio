@@ -36,7 +36,7 @@ class ContactMe extends Component {
 
   render(){
     return (
-      <Container className="mobileForm d-flex py-4 justify-content-around" >
+      <Container className="mobileForm d-flex py-4 justify-content-around" id="contact">
         <h2 className="px-5 text-center">Lets Connect!</h2>
       <Form className="container border-right border-left px-3" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
         <Form.Group controlId="exampleForm.ControlInput1">

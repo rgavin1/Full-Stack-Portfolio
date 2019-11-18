@@ -28,12 +28,13 @@ const RestaurantProj = () => {
            }}></div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
-           <Button title="View" href="" className="d-flex">
+           <Button title="View" target="_blank" href="https://barroco.netlify.com/
+" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
                }} icon={faEye} /><div className="my-auto ml-2">View</div>
            </Button>
-           <Button title="Repository" href="" className="d-flex">
+           <Button title="Repository" target="_blank" href="https://github.com/rgavin1/Barroco-Bar" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
                }} icon={faGithub} /><div className="my-auto ml-2">Github</div>

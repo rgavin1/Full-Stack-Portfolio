@@ -11,7 +11,7 @@ import {
 const Introduction = () => {
     return (
         <Container style={{
-            height: '80%'
+            height: '70%'
         }}>
             <Container className="text-justify my-5">
             <h3 className="text-center border-bottom py-3">About Me</h3>

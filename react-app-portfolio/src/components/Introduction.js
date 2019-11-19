@@ -14,7 +14,7 @@ const Introduction = () => {
             height: '80%'
         }}>
             <Container className="text-justify my-5">
-            <h3 ref={(element) => header = element } style={{
+            <h3 style={{
                 opacity: '0'
             }} className="text-center border-bottom py-3">About Me</h3>
             <p style={{

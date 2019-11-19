@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
-      <div className="App">
+      <div className="App" id="App">
           <Navigation />
           <Switch>
             <Route path="/" exact component={Main} />

@@ -11,14 +11,15 @@ const KentState = () => {
         width: '25px'
     }
     return (
-        <Container className="d-flex projectContainer">
+        <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Kent State University Parking Meter Application (Capstone Project)</h2>
            <div className="shadow" style={{
                backgroundImage: `url(${ScreenShot})`,
                height: '243px',
                margin: '0px auto',
-               minWidth: '300px',
+               maxWidth: '359px',
+               minWidth: 'auto',
                backgroundSize: 'contain',
                backgroundRepeat: 'no-repeat',
                backgroundPosition: 'center'

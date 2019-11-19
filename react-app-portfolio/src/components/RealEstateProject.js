@@ -14,14 +14,15 @@ const RealEstateProject = () => {
         width: '25px'
     }
     return (
-        <Container className="d-flex projectContainer">
+        <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Nest</h2>
            <div className="shadow" style={{
                backgroundImage: `url(${Pic})`,
                height: '240px',
                margin: '0px auto',
-               width: '359px',
+               maxWidth: '359px',
+               minWidth: 'auto',
                backgroundSize: 'contain',
                backgroundRepeat: 'no-repeat',
                backgroundPosition: 'center'

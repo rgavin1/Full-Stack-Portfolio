@@ -14,14 +14,15 @@ const FullStack = () => {
         width: '25px'
     }
     return (
-        <Container className="d-flex projectContainer">
+        <Container className="d-flex projectContainer mt-3">
         <Container className="my-auto">
        <h2 className="text-center" >Full Stack Web Dev Portfolio</h2>
        <div className="shadow" style={{
                backgroundImage: `url(${ScreenShot})`,
                height: '280px',
                margin: '0px auto',
-               width: 'inherit',
+               maxWidth: '359px',
+               minWidth: 'auto',
                backgroundSize: 'contain',
                backgroundRepeat: 'no-repeat',
                backgroundPosition: 'center'

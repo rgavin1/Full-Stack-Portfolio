@@ -14,9 +14,7 @@ const Introduction = () => {
             height: '80%'
         }}>
             <Container className="text-justify my-5">
-            <h3 style={{
-                opacity: '0'
-            }} className="text-center border-bottom py-3">About Me</h3>
+            <h3 className="text-center border-bottom py-3">About Me</h3>
             <p style={{
                 lineHeight: '1.7em',
                 fontWeight: '400',

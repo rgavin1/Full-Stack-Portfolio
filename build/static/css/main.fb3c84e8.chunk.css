@@ -1,0 +1,2 @@
+body,html{width:100vw;margin:0;overflow-x:hidden}.projectStyles{width:400px;height:300px;overflow:hidden;cursor:pointer;margin-top:25px;border:.1px solid #000}@media screen and (min-width:300px){.mobileForm{display:flex;flex-direction:column;border:none}}.jumbotron-fluid{height:50vh}@media screen and (max-width:764px){.profilePic{display:flex;flex-wrap:wrap}.jumbotron-fluid{height:65vh}}@media screen and (max-width:1000px){.projectContainer{display:flex;flex-direction:column;padding:20px 0}}
+/*# sourceMappingURL=main.fb3c84e8.chunk.css.map */

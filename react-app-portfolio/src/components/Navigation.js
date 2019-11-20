@@ -11,7 +11,7 @@ const Navigation = () => {
 <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
   <Navbar.Brand title="Ramsey Gavin">
-    <Link to="/"><Image src={Logo} /></Link>
+    <Link to="/" aria-label="Ramsey Gavin's Logo links to homepage" ><Image src={Logo}  aria-label="The Letter R to represent Ramsey Gavin .com"/></Link>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">

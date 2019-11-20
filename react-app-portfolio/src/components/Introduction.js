@@ -21,6 +21,7 @@ const Introduction = () => {
                 letterSpacing: '140%',
                 fontSize: '16px'
             }}>I am a current Kent State University grad and web developer from Akron, Ohio. I enjoy creating and developing responsive websites and web applications. Currently, I have completed three applications using the frontend technology Reactjs, with one of those being constructed using the M.E.R.N stack. I am a driven and dedicated individual with dreams of becoming a  Full-Stack Developer. -- <a style={{
+                color: 'rgb(68, 0, 255)',
                 cursor: 'pointer'
             }} href="#projects" >Check out my projects.</a>
             </p>

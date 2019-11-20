@@ -72,7 +72,12 @@ class ContactMe extends Component {
           required 
           />
         </Form.Group>
-        <Button variant="success" type="submit" style={{width: '200px', marginRight: '10px'}}>Send</Button>
+        <Button type="submit" style={{
+          width: '200px', 
+          marginRight: '10px',
+          backgroundColor: 'rgb(167, 40, 40)',
+          borderColor: 'rgb(167, 40, 40)'
+        }}>Send</Button>
         <Button variant="danger" type="reset">Clear</Button>
       </Form>
       </Container>

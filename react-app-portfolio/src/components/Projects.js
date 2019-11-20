@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <Container id="projects"> 
+        <Container id="projects" aria-label="projects react component"> 
             <h3 className="text-center my-4">Projects</h3>
             <hr className="py-3" />
-            <Container className="d-flex justify-content-around flex-wrap">
+            <Container className="d-flex justify-content-around flex-wrap" aria-label="The container that holds all completed projects" >
             <div title="Real Estate Project" className="projectStyles shadow rounded" >
-                <Link to="/RealEstateProj">
-                    <Image src={realEstateImage} fluid />
+                <Link to="/RealEstateProj" aria-label="link to Real Estate Web Page">
+                    <Image src={realEstateImage} fluid aria-label="Screenshot image of website" />
                         <div className="overlay">
                         <h4>Title</h4>
                         <p>Technologies Used</p>
@@ -23,13 +23,13 @@ const Projects = () => {
                 </Link>
             </div>
             <div title="Capstone Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/CapstoneProj"><Image src={capstoneProjectImage} fluid /></Link>
+                <Link to="/CapstoneProj" aria-label="Link to Capstone Project" ><Image aria-label="Image of Capstone Project" src={capstoneProjectImage} fluid /></Link>
             </div>
             <div title="Web Portfolio Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/PortfolioProj" ><Image src={webPortfolioImage} fluid /></Link>
+                <Link to="/PortfolioProj" aria-label="Link to Web Portfolio Information Page" ><Image aria-label="Image of Web Portfolio Site" src={webPortfolioImage} fluid /></Link>
             </div>
             <div title="Restaurant Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/RestaurantProj" ><Image src={RestaurantScreenShot} fluid /></Link>
+                <Link to="/RestaurantProj" aria-label="Link to Restaurant information page"><Image aria-label="Image of restaurant webpage"  src={RestaurantScreenShot} fluid /></Link>
             </div>
             </Container>
             <hr className="py-3" />

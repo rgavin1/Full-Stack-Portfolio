@@ -14,13 +14,15 @@ const Introduction = () => {
             height: '70%'
         }}>
             <Container className="text-justify my-5">
-            <h3 className="text-center border-bottom py-3">About Me</h3>
+            <h3 className="text-center border-bottom pb-3">About Me</h3>
             <p style={{
-                lineHeight: '1.7em',
+                lineHeight: '25.88854px',
                 fontWeight: '400',
-                letterSpacing: '.08em',
-                fontSize: '1.1em'
-            }}>I am a current Kent State University grad and web developer from Akron, Ohio. I enjoy creating and developing responsive websites and web applications. Currently, I have completed three applications using the frontend technology Reactjs, with one of those being constructed using the M.E.R.N stack. I am a driven and dedicated individual with dreams of becoming a  Full-Stack Developer. -- <a href="#projects" >Check out my projects.</a>
+                letterSpacing: '140%',
+                fontSize: '16px'
+            }}>I am a current Kent State University grad and web developer from Akron, Ohio. I enjoy creating and developing responsive websites and web applications. Currently, I have completed three applications using the frontend technology Reactjs, with one of those being constructed using the M.E.R.N stack. I am a driven and dedicated individual with dreams of becoming a  Full-Stack Developer. -- <a style={{
+                cursor: 'pointer'
+            }} href="#projects" >Check out my projects.</a>
             </p>
             <Row className="m-auto pt-3">
                 <Col xs={12} sm={12} md={true} lg={true}>

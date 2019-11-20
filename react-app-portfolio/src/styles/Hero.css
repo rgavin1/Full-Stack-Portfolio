@@ -1,13 +1,13 @@
 .jumbotron-fluid {
-    height: 50vh;
+    height: 60vh;
 }
 
-@media screen and (max-width: 764px){
+@media screen and (max-width: 400px){
     .profilePic {
         display: flex;
         flex-wrap: wrap;
     }
     .jumbotron-fluid {
-        height: 65vh;
+        height: 55vh;
     }
 }

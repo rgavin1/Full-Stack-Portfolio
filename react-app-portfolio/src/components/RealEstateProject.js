@@ -11,7 +11,8 @@ import ReactLogo from '../assets/reactjs-icon.svg';
 const RealEstateProject = () => {
     const technologiesStyle = {
         height: '30px',
-        width: '30px'
+        width: '30px',
+        margin: '10px'
     }
     return (
         <Container className="d-flex projectContainer mt-3">
@@ -84,7 +85,7 @@ const RealEstateProject = () => {
            </Container>
            <hr className="mt-4" />
            <h5 className="text-center mb-3">Technologies</h5>
-           <div className="d-flex justify-content-around flex-wrap">
+           <Container fluid className="d-flex justify-content-between flex-wrap">
            <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
         <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
         <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
@@ -93,13 +94,15 @@ const RealEstateProject = () => {
         <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/4/48/GoogleMaps_logo.svg" alt="Google Maps Logo" title="Google Maps" />
         <img style={{
             height: '30px',
-            width: '50px'
+            width: '50px',
+            margin: '10px'
         }} src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node Js Logo" title="Nodejs" />
         <img style={{
             height: '20px',
-            width: '80px'
+            width: '80px',
+            margin: '10px'
         }} src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB" title="MongoDB" />
-           </div>
+           </Container>
            </Container>
         </Container>
     )

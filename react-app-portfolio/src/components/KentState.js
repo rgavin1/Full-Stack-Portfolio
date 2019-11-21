@@ -1,5 +1,5 @@
 import React from 'react';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Button } from 'react-bootstrap';
@@ -7,8 +7,9 @@ import ScreenShot from '../assets/Capstone1339x615.png';
 
 const KentState = () => {
     const technologiesStyle = {
-        height: '25px',
-        width: '25px'
+        height: '30px',
+        width: '30px',
+        margin: '10px'
     }
     return (
         <Container className="d-flex projectContainer mt-3">
@@ -29,7 +30,7 @@ const KentState = () => {
            <Button title="View" href="" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
-               }} icon={faEye} /><div className="my-auto ml-2">View</div>
+               }} icon={faExternalLinkAlt} /><div className="my-auto ml-2">View</div>
            </Button>
            <Button title="Repository" href="" className="d-flex">
                <FontAwesomeIcon style={{
@@ -46,9 +47,9 @@ const KentState = () => {
            <Container className="justify-content-between">
            <div>
            <h5>Issues</h5>
-           <ul>
+           <ol>
               <li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p>One significant issue, backend engineers, neglected to establish a to the front-end during project presentation. 
                 </p>
                </li>
                <li>
@@ -59,14 +60,13 @@ const KentState = () => {
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                    </p>
                </li>
-           </ul>
+           </ol>
            </div>
            <div>
            <h5>Solutions</h5>
-           <ul>
+           <ol>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   </p>
+                   <p>Issue never solved</p>
                </li>
                <li>
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -76,12 +76,12 @@ const KentState = () => {
                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                    </p>
                </li>
-           </ul>
+           </ol>
            </div>
            </Container>
            <hr className="mt-4" />
            <h5 className="text-center mb-3">Technologies</h5>
-           <div className="d-flex justify-content-around">
+           <Container fluid className="d-flex justify-content-around flex-wrap">
            <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />  
@@ -90,7 +90,7 @@ const KentState = () => {
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" alt="JSON Logo" title="JSON" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Web Serivers Logo" title="Amazon Web Services" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/de/d/dd/MySQL_logo.svg" alt="MySQL Logo" title="MySQL" />
-           </div>
+           </Container>
            </Container>
         </Container>
     )

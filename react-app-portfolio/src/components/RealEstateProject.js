@@ -85,7 +85,7 @@ const RealEstateProject = () => {
            </Container>
            <hr className="mt-4" />
            <h5 className="text-center mb-3">Technologies</h5>
-           <Container fluid className="d-flex justify-content-between flex-wrap">
+           <Container fluid className="d-flex justify-content-around flex-wrap">
            <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
         <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
         <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />

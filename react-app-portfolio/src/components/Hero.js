@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { Jumbotron, Container } from 'react-bootstrap';
 import '../styles/Hero.css';
 import ProfilePic from '../assets/profile pic.jpg';

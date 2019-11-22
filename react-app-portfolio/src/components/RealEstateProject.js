@@ -24,7 +24,7 @@ const RealEstateProject = () => {
                margin: '0px auto',
                maxWidth: '359px',
                minWidth: 'auto',
-               backgroundSize: 'contain',
+               backgroundSize: '355px auto',
                backgroundRepeat: 'no-repeat',
                backgroundPosition: 'center'
            }}></div>

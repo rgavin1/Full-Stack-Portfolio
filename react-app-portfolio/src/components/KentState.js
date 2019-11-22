@@ -14,17 +14,17 @@ const KentState = () => {
     return (
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
-           <h2 className="text-center" >Kent State University Parking Meter Application (Capstone Project)</h2>
-           <div className="shadow" style={{
+           <h2 className="text-center mb-3" >Kent State University Parking Meter Application (Capstone Project)</h2>
+           <Container fluid className="shadow" style={{
                backgroundImage: `url(${ScreenShot})`,
                height: '243px',
                margin: '0px auto',
                maxWidth: '359px',
                minWidth: 'auto',
-               backgroundSize: 'contain',
+               backgroundSize: '560px auto',
                backgroundRepeat: 'no-repeat',
-               backgroundPosition: 'center'
-           }}></div>
+               backgroundPosition: '25% 50%'
+           }}></Container>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" href="" className="d-flex">
@@ -49,16 +49,16 @@ const KentState = () => {
            <h5>Issues</h5>
            <ol>
               <li>
-                <p>One significant issue, backend engineers, neglected to establish a to the front-end during project presentation. 
+                <p>One significant issue that occurred was the back-end server wasn't able to establish a connection to the front-end. 
                 </p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   </p>
+                 <p>Many of the team members had zero experience coding or building web applications.
+                 </p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   </p>
+                 <p>Only fourteen weeks to learn, design, and implement a functioning web application.
+                 </p>
                </li>
            </ol>
            </div>
@@ -69,11 +69,11 @@ const KentState = () => {
                    <p>Issue never solved</p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>To gain experience coding, a few members were assigned individual tasks to learn the art of Responsive Webdesign and requesting information from Google Map Api.
                    </p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>The team had been split into three groups: Design, Front-end, and Back-end. Each group was required to attend weekly meetings and update the Trello task board. After several weeks we managed to develop a project.
                    </p>
                </li>
            </ol>

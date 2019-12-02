@@ -15,3 +15,12 @@
     width: 400px;
     height: 300px;
 }
+
+.capstoneImg {
+    background-image: url('../assets/Capstone/Capstone_479.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}

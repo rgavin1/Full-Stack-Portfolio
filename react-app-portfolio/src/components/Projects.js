@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
-import realEstateImage from '../assets/RealEstate/realestatewebpage479.png';
-import capstoneProjectImage from '../assets/Capstone.png';
 import webPortfolioImage from '../assets/Web Developer Portfolio.png';
 import RestaurantScreenShot from '../assets/Resturant.png';
 import WeatherAppScreenShot from '../assets/WeatherApp/Weathe_ App_479.png';
@@ -20,7 +18,9 @@ const Projects = () => {
                 </Link>
             </div>
             <div title="Capstone Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/CapstoneProj" aria-label="Link to Capstone Project" ><Image aria-label="Image of Capstone Project" src={capstoneProjectImage} fluid /></Link>
+                <Link to="/CapstoneProj" aria-label="Link to Capstone Project" >
+                    <div className="capstoneImg" aria-label="Image of Capstone Project" ></div>
+                </Link>
             </div>
             <div title="Web Portfolio Project" className="projectStyles shadow rounded" rounded>
                 <Link to="/PortfolioProj" aria-label="Link to Web Portfolio Information Page" ><Image aria-label="Image of Web Portfolio Site" src={webPortfolioImage} fluid /></Link>

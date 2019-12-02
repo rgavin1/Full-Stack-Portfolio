@@ -4,7 +4,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RealEstateProject.css';
-import Pic from '../assets/realestatewebpage1339x935.png';
+import Pic from '../assets/RealEstate/realestatewebpage479.png';
 import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
 
@@ -18,16 +18,7 @@ const RealEstateProject = () => {
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Nest</h2>
-           <div className="shadow" style={{
-               backgroundImage: `url(${Pic})`,
-               height: '240px',
-               margin: '0px auto',
-               maxWidth: '359px',
-               minWidth: 'auto',
-               backgroundSize: '355px auto',
-               backgroundRepeat: 'no-repeat',
-               backgroundPosition: 'center'
-           }}></div>
+           <div className="shadow realEstateImg mx-auto"></div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" href="" className="d-flex">

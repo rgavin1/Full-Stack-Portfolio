@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
-import realEstateImage from '../assets/real estate web page.png';
+import realEstateImage from '../assets/RealEstate/realestatewebpage479.png';
 import capstoneProjectImage from '../assets/Capstone.png';
 import webPortfolioImage from '../assets/Web Developer Portfolio.png';
 import RestaurantScreenShot from '../assets/Resturant.png';
@@ -16,11 +16,7 @@ const Projects = () => {
             <Container className="d-flex justify-content-around flex-wrap" aria-label="The container that holds all completed projects" >
             <div title="Real Estate Project" className="projectStyles shadow rounded" >
                 <Link to="/RealEstateProj" aria-label="link to Real Estate Web Page">
-                    <Image src={realEstateImage} fluid aria-label="Screenshot image of website" />
-                        <div className="overlay">
-                        <h4>Title</h4>
-                        <p>Technologies Used</p>
-                        </div>
+                    <div className="restaurantImg" aria-label="Screenshot image of website" ></div>
                 </Link>
             </div>
             <div title="Capstone Project" className="projectStyles shadow rounded" rounded>

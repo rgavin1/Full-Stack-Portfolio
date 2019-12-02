@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Image } from 'react-bootstrap';
-import webPortfolioImage from '../assets/Web Developer Portfolio.png';
-import RestaurantScreenShot from '../assets/Resturant.png';
 import WeatherAppScreenShot from '../assets/WeatherApp/Weathe_ App_479.png';
 import '../styles/Projects.css';
 import { Link } from 'react-router-dom';
@@ -14,7 +12,7 @@ const Projects = () => {
             <Container className="d-flex justify-content-around flex-wrap" aria-label="The container that holds all completed projects" >
             <div title="Real Estate Project" className="projectStyles shadow rounded" >
                 <Link to="/RealEstateProj" aria-label="link to Real Estate Web Page">
-                    <div className="restaurantImg" aria-label="Screenshot image of website" ></div>
+                    <div className="realEstateImg" aria-label="Screenshot image of website" ></div>
                 </Link>
             </div>
             <div title="Capstone Project" className="projectStyles shadow rounded" rounded>
@@ -28,7 +26,9 @@ const Projects = () => {
                 </Link>
             </div>
             <div title="Restaurant Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/RestaurantProj" aria-label="Link to Restaurant information page"><Image aria-label="Image of restaurant webpage"  src={RestaurantScreenShot} fluid /></Link>
+                <Link to="/RestaurantProj" aria-label="Link to Restaurant information page">
+                    <div className="restaurantImg" aria-label="Image of restaurant webpage"></div>
+                </Link>
             </div>
             <div title="Weather Application Project" className="projectStyles shadow rounded" rounded>
                 <Link to="/WeatherApp" aria-label="Link to Weather Application information page"><Image aria-label="Image of Weather App"  src={WeatherAppScreenShot} fluid /></Link>

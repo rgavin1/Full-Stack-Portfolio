@@ -7,7 +7,7 @@
     border: black solid 0.1px;
 }
 
-.restaurantImg {
+.realEstateImg {
     background-image: url('../assets/RealEstate/realestatewebpage479.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -27,6 +27,15 @@
 
 .portfolioImg {
     background-image: url('../assets/Portfolio/WebPortfolio_479.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}
+
+.restaurantImg {
+    background-image: url('../assets/Resturant/Barroco_479.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

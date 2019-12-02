@@ -4,7 +4,6 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RestaurantProj.css';
-import ScreenShot from '../assets/Resturant.png';
 import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
 
@@ -17,16 +16,7 @@ const RestaurantProj = () => {
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Barroco</h2>
-           <div className="shadow" style={{
-               backgroundImage: `url(${ScreenShot})`,
-               height: '280px',
-               margin: '0px auto',
-               maxWidth: '359px',
-               minWidth: 'auto',
-               backgroundSize: 'contain',
-               backgroundRepeat: 'no-repeat',
-               backgroundPosition: 'center'
-           }}></div>
+           <div className="shadow restaurantImg mx-auto" ></div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" target="_blank" href="https://barroco.netlify.com/

@@ -47,7 +47,7 @@ const Navigation = () => {
     <Nav>
       <NavDropdown.Divider />
       <Container className="d-flex justify-content-around">
-      <Nav.Link title="Resume" href="https://docs.google.com/document/d/1C3GWuIw0NWx_ybZs0xqecSB1Rx6zQeBp2pT3a9esG5o/edit" target="blank" style={{
+      <Nav.Link title="Resume" href="https://docs.google.com/document/d/1C3GWuIw0NWx_ybZs0xqecSB1Rx6zQeBp2pT3a9esG5o/edit?usp=sharing" target="blank" style={{
         fontSize: '1.7em'
       }}>
         <FontAwesomeIcon icon={faFile}/>

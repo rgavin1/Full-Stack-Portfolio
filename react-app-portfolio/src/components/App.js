@@ -6,6 +6,7 @@ import RealEstateProj from './RealEstateProject';
 import CapstoneProj from './KentState';
 import PortfolioProj from './FullStack';
 import RestaurantProj from './RestaurantProj';
+import WeatherApp from './WeatherApp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/CapstoneProj" component={CapstoneProj} />
             <Route path="/PortfolioProj" component={PortfolioProj} />
             <Route path="/RestaurantProj" component={RestaurantProj} />
+            <Route path="/WeatherApp" component={WeatherApp} />
           </Switch>
           <Footer />
       </div>

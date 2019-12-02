@@ -85,13 +85,17 @@ const RestaurantProj = () => {
            </Container>
            <hr className="mt-4" />
            <h5 className="text-center mb-3">Technologies</h5>
-           <div className="d-flex justify-content-around">
+           <Container className="d-flex justify-content-around flex-wrap">
            <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
-        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
-        <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
-        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />
-        <img style={technologiesStyle} src={ReactLogo} alt="Reactjs Logo" title="React" />
-           </div>
+           <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
+           <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
+           <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />
+           <img style={technologiesStyle} src={ReactLogo} alt="Reactjs Logo" title="React" />
+           <img style={{
+            height: '20px',
+            width: '70px'
+           }} src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" alt="Netlify Logo" title="Netlify" />
+           </Container>
            </Container>
         </Container>
     )

@@ -4,6 +4,7 @@ import realEstateImage from '../assets/real estate web page.png';
 import capstoneProjectImage from '../assets/Capstone.png';
 import webPortfolioImage from '../assets/Web Developer Portfolio.png';
 import RestaurantScreenShot from '../assets/Resturant.png';
+import WeatherAppScreenShot from '../assets/WeatherApp/Weathe_ App_479.png';
 import '../styles/Projects.css';
 import { Link } from 'react-router-dom';
 
@@ -30,6 +31,9 @@ const Projects = () => {
             </div>
             <div title="Restaurant Project" className="projectStyles shadow rounded" rounded>
                 <Link to="/RestaurantProj" aria-label="Link to Restaurant information page"><Image aria-label="Image of restaurant webpage"  src={RestaurantScreenShot} fluid /></Link>
+            </div>
+            <div title="Weather Application Project" className="projectStyles shadow rounded" rounded>
+                <Link to="/WeatherApp" aria-label="Link to Weather Application information page"><Image aria-label="Image of Weather App"  src={WeatherAppScreenShot} fluid /></Link>
             </div>
             </Container>
             <hr className="py-3" />

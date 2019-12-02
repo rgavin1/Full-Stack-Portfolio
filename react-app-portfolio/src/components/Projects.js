@@ -23,7 +23,9 @@ const Projects = () => {
                 </Link>
             </div>
             <div title="Web Portfolio Project" className="projectStyles shadow rounded" rounded>
-                <Link to="/PortfolioProj" aria-label="Link to Web Portfolio Information Page" ><Image aria-label="Image of Web Portfolio Site" src={webPortfolioImage} fluid /></Link>
+                <Link to="/PortfolioProj" aria-label="Link to Web Portfolio Information Page" >
+                    <div className="portfolioImg" aria-label="Image of Web Portfolio Site"></div>
+                </Link>
             </div>
             <div title="Restaurant Project" className="projectStyles shadow rounded" rounded>
                 <Link to="/RestaurantProj" aria-label="Link to Restaurant information page"><Image aria-label="Image of restaurant webpage"  src={RestaurantScreenShot} fluid /></Link>

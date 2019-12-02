@@ -24,3 +24,12 @@
     width: 400px;
     height: 300px;
 }
+
+.portfolioImg {
+    background-image: url('../assets/Portfolio/WebPortfolio_479.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}

@@ -1,3 +1,15 @@
+.portfolioImg {
+    background-image: url('../assets/Portfolio/WebPortfolio_479.png');
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+}
+
+
+
 @media screen and (max-width: 1000px){
     .projectContainer {
         display: flex;

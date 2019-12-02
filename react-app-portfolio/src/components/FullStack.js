@@ -4,7 +4,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/FullStack.css';
-import ScreenShot from '../assets/Web Developer Portfolio.png';
+import ScreenShot from '../assets/Portfolio/WebPortfolio_479.png';
 import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
 
@@ -17,16 +17,7 @@ const FullStack = () => {
         <Container className="d-flex projectContainer mt-3">
         <Container className="my-auto">
        <h2 className="text-center" >Full Stack Web Dev Portfolio</h2>
-       <div className="shadow" style={{
-               backgroundImage: `url(${ScreenShot})`,
-               height: '280px',
-               margin: '0px auto',
-               maxWidth: '359px',
-               minWidth: 'auto',
-               backgroundSize: 'contain',
-               backgroundRepeat: 'no-repeat',
-               backgroundPosition: 'center'
-       }}></div>
+       <div className="shadow portfolioImg mx-auto" ></div>
        <hr className="mt-4"/>
        <Container className="d-flex justify-content-around">
        <Button title="View" href="" className="d-flex">

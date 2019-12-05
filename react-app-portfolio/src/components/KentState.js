@@ -3,7 +3,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Button } from 'react-bootstrap';
-import ScreenShot from '../assets/Capstone/Capstone_479.png';
+import '../styles/KentState.css';
 
 const KentState = () => {
     const technologiesStyle = {
@@ -15,15 +15,7 @@ const KentState = () => {
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center mb-3" >Kent State University Parking Meter Application (Capstone Project)</h2>
-           <Container fluid className="shadow" style={{
-               backgroundImage: `url(${ScreenShot})`,
-               backgroundSize: 'cover',
-               backgroundRepeat: 'no-repeat',
-               backgroundPosition: 'top',
-               width: '400px',
-               height: '300px',
-               margin: '0px auto'
-           }}></Container>
+           <Container fluid className="shadow KSUImage mx-auto"></Container>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" href="" className="d-flex">

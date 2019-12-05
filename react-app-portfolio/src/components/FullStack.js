@@ -38,38 +38,20 @@ const FullStack = () => {
        <Container className="my-auto pt-3">
        <Container className="justify-content-between">
        <div>
-       <h5>Issues</h5>
-       <ul>
-       <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
+       <h4>Issues</h4>
+       <ol>
+            <li>
+               <p>First-time using GreenSock and Scroll Magic in a project.</p>
            </li>
-           <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
-           </li>
-           <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
-           </li>
-       </ul>
+       </ol>
        </div>
        <div>
        <h5>Solutions</h5>
-       <ul>
+       <ol>
            <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
+               <p>I watched a few tutorials and read some documentation to get started.</p>
            </li>
-           <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
-           </li>
-           <li>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               </p>
-           </li>
-       </ul>
+       </ol>
        </div>
        </Container>
        <hr className="mt-4" />

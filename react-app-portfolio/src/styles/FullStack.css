@@ -8,7 +8,12 @@
     padding: 0;
 }
 
-
+@media screen and (max-width: 425px){
+    .portfolioImg {
+        width: 250px;
+        height: 188px;
+    }
+}
 
 @media screen and (max-width: 1000px){
     .projectContainer {

@@ -1,3 +1,22 @@
+.KSUImage {
+    background-image: url('../assets/Capstone/Capstone_479.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 400px;
+    height: 300px;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 425px){
+    .KSUImage {
+        width: 260px;
+        height: 250px;
+    }
+}
+
+
+
 @media screen and (max-width: 1000px){
     .projectContainer {
         display: flex;

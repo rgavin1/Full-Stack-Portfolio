@@ -5,3 +5,10 @@
     width: 479px;
     height: 300px;
 }
+
+@media screen and (max-width: 425px){
+    .projectImg {
+        width: 240px;
+        height: 188px;
+    }
+}

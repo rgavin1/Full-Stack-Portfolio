@@ -17,7 +17,7 @@ const WeatherApp = () => {
         <Container className="d-flex projectContainer mt-3">
         <Container className="my-auto">
        <h2 className="text-center" >Weather Application</h2>
-       <div className="shadow projectImg"></div>
+       <div className="shadow projectImg mx-auto"></div>
        <hr className="mt-4"/>
        <Container className="d-flex justify-content-around">
        <Button title="View" href="" className="d-flex">

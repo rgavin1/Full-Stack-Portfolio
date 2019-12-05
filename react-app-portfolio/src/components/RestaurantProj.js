@@ -33,44 +33,42 @@ const RestaurantProj = () => {
            </Container>
            <hr className="mt-4" />
            <h3>Description</h3>
-           <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Ipsum suspendisse ultrices gravida dictum fusce ut placerat. Amet mauris commodo quis imperdiet massa tincidunt. Gravida rutrum quisque non tellus orci. Fusce ut placerat orci nulla. In pellentesque massa placerat duis ultricies lacus sed turpis tincidunt.
+           <p className="text-justify">Faux Website** Recreated a class assignment originally built using HTML and CSS3, now converted to Reactjs and Bootstrap4
            </p>
            </Container>
            <Container className="my-auto pt-3">
            <Container className="justify-content-between">
            <div>
            <h5>Issues</h5>
-           <ul>
-           <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   </p>
+           <ol>
+               <li>
+                   <p>I was extremely new to website building and responsive web design.</p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                   </p>
+                   <p>I have struggled with media queries.</p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>I had issues getting the video to play in the background.
                    </p>
                </li>
-           </ul>
+           </ol>
            </div>
            <div>
            <h5>Solutions</h5>
-           <ul>
+           <ol>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>Practice, Practice, Practice
                    </p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>With assistance from my professor and many tutorials, I managed to solve the issue.
                    </p>
                </li>
                <li>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   <p>I found documentation for a video background on the React site and found I needed to camel case an attribute, which solved the problem.
                    </p>
                </li>
-           </ul>
+           </ol>
            </div>
            </Container>
            <hr className="mt-4" />

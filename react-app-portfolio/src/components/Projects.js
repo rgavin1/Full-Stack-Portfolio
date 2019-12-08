@@ -1,12 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Image } from 'react-bootstrap';
 import WeatherAppScreenShot from '../assets/WeatherApp/Weathe_ App_479.png';
 import '../styles/Projects.css';
 import { Link } from 'react-router-dom';
+// import "../../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js";
+import ScrollMagic from "../../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js";
 
-const Projects = () => {
+
+class Projects extends Component {
+    constructor(props){
+        super(props);
+        // init controller
+        this.controller = new ScrollMagic.Controller();
+    }
+
+    componentDidMount(){
+    // create a scene
+    new ScrollMagic.Scene({
+        triggerElement: '.projects'
+    })
+    .setClassToggle(".realEstateImg", "fade-in")
+    .addTo(this.controller);
+    
+    new ScrollMagic.Scene({
+        triggerElement: '.projects'
+    })
+    .setClassToggle(".capstoneImg", "fade-in")
+    .addTo(this.controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: '.capstoneImg'
+    })
+    .setClassToggle(".portfolioImg", "fade-in")
+    .addTo(this.controller);
+}
+
+
+    render(){
     return (
-        <Container id="projects" aria-label="projects react component"> 
+        <Container className="projects" id="projects" aria-label="projects react component"> 
             <h3 className="text-center my-4">Projects</h3>
             <hr className="py-3" />
             <Container className="d-flex justify-content-around flex-wrap" aria-label="The container that holds all completed projects" >
@@ -36,7 +68,7 @@ const Projects = () => {
             </Container>
             <hr className="py-3" />
         </Container>
-    )
+    )}
 }
 
 export default Projects;

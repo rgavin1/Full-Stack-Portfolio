@@ -5,29 +5,18 @@ import ProfilePic from '../assets/profile pic.jpg';
 
 const Hero = () => {
     return (
-        <Jumbotron fluid>
-            <Container className="profilePic">
-                <Container className="mb-3">
-                <div className="mx-auto" style={{
-                    width: '175px',
-                    height: '175px',
-                    backgroundImage: `url(${ProfilePic})`,
-                    borderRadius: '100%',
-                    backgroundPosition: 'auto'
-                }}></div>
-                </Container>
-                <Container className="my-auto">
-                <h3 className="text-center">Hello, I'm Ramsey Gavin.</h3>
-                <blockquote className="blockquote text-center mb-0">
-                    <p style={{
-                    fontSize: '30px',
-                    fontWeight: '300'
-                    }}>
-                I'm a Web developer.
-                </p>
-                </blockquote>
-                </Container>
-            </Container>
+        <Jumbotron>
+            <div className="image-wrapper d-flex justify-content-center flex-wrap">
+                <div className="text-center">
+                    <img className="profilePic" src={ProfilePic} alt="Ramsey Gavin's profile picture 150px by 150px" />
+                </div>
+                <span className="introduction-wrapper">
+                    <h3 className="text-center">Hello, I'm Ramsey Gavin.</h3>
+                    <span className="text-center">
+                        <p>I'm a Web developer.</p>
+                    </span>
+                </span>
+            </div>
         </Jumbotron>
     )
 }

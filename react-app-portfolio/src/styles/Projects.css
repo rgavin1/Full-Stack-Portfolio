@@ -4,7 +4,7 @@
     overflow: hidden;
     cursor: pointer;
     margin-top: 25px;
-    border: black solid 0.1px;
+    position: relative;
 }
 
 .realEstateImg {
@@ -14,6 +14,10 @@
     background-size: cover;
     width: 400px;
     height: 300px;
+    position: absolute;
+    top: -50%;
+    transition: all 0.75s ease-out;
+    opacity: 0;
 }
 
 .capstoneImg {
@@ -23,6 +27,10 @@
     background-size: cover;
     width: 400px;
     height: 300px;
+    position: absolute;
+    top: -50%;
+    transition: all 0.75s ease-out;
+    opacity: 0;
 }
 
 .portfolioImg {
@@ -32,6 +40,10 @@
     background-size: cover;
     width: 400px;
     height: 300px;
+    position: absolute;
+    top: -50%;
+    transition: all 0.75s ease-out;
+    opacity: 0;
 }
 
 .restaurantImg {
@@ -41,4 +53,9 @@
     background-size: cover;
     width: 400px;
     height: 300px;
+}
+
+.fade-in {
+    top: 0%;
+    opacity: 1;
 }

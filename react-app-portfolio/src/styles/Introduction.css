@@ -1,0 +1,48 @@
+.introduction-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.about-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.about-para {
+    line-height: 25.88854px;
+    font-weight: 400;
+    letter-spacing: 140%;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    transform: translate(-50%, 0%);
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.objectives {
+    transform: translate(50%, 0%);
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.about-wrapper a {
+    color: rgb(68, 0, 255);
+    cursor: pointer;
+}
+
+.card {
+    height: 10em;
+    margin-top: 10px; 
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translate(0%, 0%);
+}
+
+@media screen and (max-width: 400px){
+    .introduction-mobile {
+        flex-wrap: wrap;
+    }    
+}

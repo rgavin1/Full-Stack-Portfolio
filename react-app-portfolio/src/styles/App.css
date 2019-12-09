@@ -1,0 +1,9 @@
+body {
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+}
+
+.App {
+    background-color: rgba(0, 0, 0, 1);
+    color: snow;
+}

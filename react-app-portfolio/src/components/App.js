@@ -8,12 +8,13 @@ import PortfolioProj from './FullStack';
 import RestaurantProj from './RestaurantProj';
 import WeatherApp from './WeatherApp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import '../styles/App.css';
 
 const App = () => {
   return (
     <Router>
       <div className="App" id="App">
-          <Navigation />
+        <Navigation />
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/RealEstateProj" component={RealEstateProj} />

@@ -1,39 +1,47 @@
-.introduction-container {
-    height: 100vh;
-    width: 100vw;
-}
 
 .about-wrapper {
-    height: 100%;
-    position: relative;
+    height: 70%;
 }
 
 .about-para {
-    line-height: 25.88854px;
+    line-height: 25px;
     font-weight: 400;
     letter-spacing: 140%;
-    font-size: 16px;
+    font-size: 18px;
     width: 90%;
     margin: 0 auto;
     transform: translate(-50%, 0%);
     opacity: 0;
-    transition: all 0.9s ease;
+    transition: all 0.7s ease;
 }
 
 .objectives {
     transform: translate(50%, 0%);
     opacity: 0;
-    transition: all 0.9s ease;
+    transition: all 0.7s ease;
 }
 
 .about-wrapper a {
-    color: rgb(68, 0, 255);
+    color: rgb(255, 221, 0);
     cursor: pointer;
 }
 
-.card {
-    height: 10em;
-    margin-top: 10px; 
+.about-background-image {
+    background-image: url('../assets/About/laptop_1024.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .fade-in {
@@ -41,8 +49,90 @@
     transform: translate(0%, 0%);
 }
 
-@media screen and (max-width: 400px){
-    .introduction-mobile {
-        flex-wrap: wrap;
-    }    
+.skills-wrapper {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+}
+
+.responsive-device-wrapper {
+    font-size: 35px;
+    width: 80px;
+}
+
+.browser-wrapper {
+    width: 220px;
+    font-size: 35px;
+}
+
+.hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -30px;  
+  }
+  
+  .hex .top {
+    width: 0;
+    border-right: 70px solid transparent;
+    border-bottom: 35px solid green;
+    border-left: 70px solid transparent;
+  }
+  
+  .hex .center {
+    width: 140px;
+    height: 70px;
+    border-color: transparent;
+    background-color: green;
+  }
+  
+  .hex .bottom {
+    width: 0;
+    border-right: 70px solid transparent;
+    border-top: 35px solid green;
+    border-left: 70px solid transparent;
+  }
+  
+  .hex-row {
+      clear: left;
+  }
+  
+  .hex-row.even {
+      margin-left: 145px;
+  }
+
+@media screen and (max-width: 320px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_320.jpg');
+    }
+}
+
+@media screen and (max-width: 375px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_375.jpg');
+    }
+}
+
+@media screen and (max-width: 425px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_425.jpg');
+    }
+}
+
+@media screen and (max-width: 768px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_768.jpg');
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_1366.jpg');
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_1440.jpg');
+    }
 }

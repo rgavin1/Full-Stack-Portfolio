@@ -7,6 +7,7 @@ p {
     width: 90%;
     position: absolute;
     top: 30%;
+    left: 5%;
 }
 
 .introduction-wrapper {
@@ -17,9 +18,70 @@ p {
     width: 175px;
     height: 175px;
     border-radius: 100%;
+    -webkit-box-shadow: -1px 4px 20px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 20px 9px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 20px 9px rgba(0,0,0,0.75);
 }
 
 .jumbotron {
+    background-image: url('../assets/Hero/apple_1024.jpg');
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top;
     position: relative;
     height: 100vh;
+    color: snow;
+    margin-bottom: 0 !important;
+}
+
+.overlay {
+    /* IE 5.5–7 
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Gradient(startColorStr="#ffffff", endColorStr="#000000", GradientType=0)'; */
+    background-image: -ms-linear-gradient(top, rgba(67, 67, 67, 0.15) 0%, rgb(0, 0, 0, 1) 100%);
+    background-image: -webkit-linear-gradient(to top, rgba(67, 67, 67, 0.15) 0%, rgb(0, 0, 0, 1) 100%);
+    background-image: -o-linear-gradient(to top, rgba(67, 67, 67, 0.15) 0%, rgb(0, 0, 0, 1) 100%);
+    background-image: -moz-linear-gradient(to top, rgba(67, 67, 67, 0.15) 0%, rgb(0, 0, 0, 1) 100%);
+    background-image: linear-gradient(to top, rgba(67, 67, 67, 0.15) 0%, rgb(0, 0, 0, 1) 100%);
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 320px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_320.jpg');
+    }
+}
+
+@media screen and (max-width: 375px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_375.jpg');
+    }
+}
+
+@media screen and (max-width: 425px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_425.jpg');
+    }
+}
+
+@media screen and (max-width: 768px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_768.jpg');
+    }
+}
+
+@media screen and (max-width: 1366px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_1366.jpg');
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .jumbotron {
+        background-image: url('../assets/Hero/apple_1440.jpg');
+    }
 }

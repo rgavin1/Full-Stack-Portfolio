@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+/*
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faMobileAlt, 
@@ -15,7 +16,8 @@ import {
     faChrome, 
     faFirefox,
  } from '@fortawesome/free-brands-svg-icons';
-import '../styles/Introduction.css';
+*/
+ import '../styles/Introduction.css';
 import { Controller, Scene } from 'react-scrollmagic';
 
 

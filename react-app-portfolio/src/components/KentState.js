@@ -76,8 +76,12 @@ const KentState = () => {
            <img style={technologiesStyle} src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt="HTML5_Badge" title="HTML5" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3  logo" title="CSS3" />  
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />  
-           <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/4/48/GoogleMaps_logo.svg" alt="Google Maps Logo" title="Google Maps" />
-           <img style={technologiesStyle} src="https://www.php.net/images/logos/php-logo.svg" alt="PHP logo" title="PHP" />
+           <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Maps_icon.svg" alt="Google Maps Logo" title="Google Maps" />
+           <img style={{
+               height: '30px',
+               width: '60px',
+               margin: '10px 0px'
+           }} src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP logo" title="PHP" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/c/c9/JSON_vector_logo.svg" alt="JSON Logo" title="JSON" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Web Serivers Logo" title="Amazon Web Services" />
            <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/de/d/dd/MySQL_logo.svg" alt="MySQL Logo" title="MySQL" />

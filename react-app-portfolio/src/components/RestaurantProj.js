@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RestaurantProj.css';
 import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
+import RestaurantImg from '../assets/Resturant/Barroco_New_479.png';
+import { Image } from 'react-bootstrap';
 
 const RestaurantProj = () => {
     const technologiesStyle = {
@@ -16,7 +18,13 @@ const RestaurantProj = () => {
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Barroco</h2>
-           <div className="shadow restaurantImg mx-auto" ></div>
+           <div className=" mx-auto" style={{
+               width: 'auto',
+               height: '300px',
+               overflow: 'hidden'
+           }} >
+            <Image src={RestaurantImg} fluid/>
+           </div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" target="_blank" href="https://barroco.netlify.com/

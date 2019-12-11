@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container, Button, Image } from 'react-bootstrap';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RealEstateProject.css';
 import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
+import RealEstateImg from '../assets/RealEstate/realestate_479.png';
 
 const RealEstateProject = () => {
     const technologiesStyle = {
@@ -17,7 +18,13 @@ const RealEstateProject = () => {
         <Container className="d-flex projectContainer mt-3">
             <Container className="my-auto">
            <h2 className="text-center" >Nest</h2>
-           <div className="shadow realEstateImg mx-auto"></div>
+           <div className="text-center" style={{
+               width: 'auto',
+               height: '300px',
+               overflow: 'hidden'
+           }}>
+               <Image src={RealEstateImg} fluid />
+           </div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
            <Button title="View" href="" className="d-flex">
@@ -81,7 +88,7 @@ const RealEstateProject = () => {
         <img style={technologiesStyle} src={BootstrapLogo} alt="Bootstrap B Solid Logo" title="Bootstrap" />
         <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo" title="JavaScript" />
         <img style={technologiesStyle} src={ReactLogo} alt="Reactjs Logo" title="React" />
-        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/4/48/GoogleMaps_logo.svg" alt="Google Maps Logo" title="Google Maps" />
+        <img style={technologiesStyle} src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Maps_icon.svg" alt="Google Maps Logo" title="Google Maps" />
         <img style={{
             height: '30px',
             width: '50px',

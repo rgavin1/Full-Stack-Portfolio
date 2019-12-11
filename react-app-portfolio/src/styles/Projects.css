@@ -1,58 +1,9 @@
-.projectStyles {
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
-    cursor: pointer;
-    margin-top: 25px;
-    position: relative;
+.flex-wrap {
+    width: 80%;
 }
 
-.realEstateImg {
-    background-image: url('../assets/RealEstate/realestatewebpage479.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    top: -50%;
-    transition: all 0.75s ease-out;
-    opacity: 0;
-}
-
-.capstoneImg {
-    background-image: url('../assets/Capstone/Capstone_479.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    top: -50%;
-    transition: all 0.75s ease-out;
-    opacity: 0;
-}
-
-.portfolioImg {
-    background-image: url('../assets/Portfolio/WebPortfolio_479.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    top: -50%;
-    transition: all 0.75s ease-out;
-    opacity: 0;
-}
-
-.restaurantImg {
-    background-image: url('../assets/Resturant/Barroco_479.png');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 300px;
+.projects div {
+    margin: 25px 0;
 }
 
 .fade-in {

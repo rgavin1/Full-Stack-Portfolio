@@ -51,9 +51,20 @@
 
 .skills-wrapper {
     position: absolute;
-    bottom: 0%;
+    bottom: 20%;
     left: 0;
     right: 0;
+}
+
+.skills-wrapper span {
+    font-size: 32px;
+    padding: 4px 4px;
+}
+
+.skills-wrapper div {
+    background-color: rgba(0,0,0, 0.55);
+    border-radius: 5%;
+    padding: 5px;
 }
 
 .responsive-device-wrapper {
@@ -65,41 +76,6 @@
     width: 220px;
     font-size: 35px;
 }
-
-.hex {
-    float: left;
-    margin-left: 3px;
-    margin-bottom: -30px;  
-  }
-  
-  .hex .top {
-    width: 0;
-    border-right: 70px solid transparent;
-    border-bottom: 35px solid green;
-    border-left: 70px solid transparent;
-  }
-  
-  .hex .center {
-    width: 140px;
-    height: 70px;
-    border-color: transparent;
-    background-color: green;
-  }
-  
-  .hex .bottom {
-    width: 0;
-    border-right: 70px solid transparent;
-    border-top: 35px solid green;
-    border-left: 70px solid transparent;
-  }
-  
-  .hex-row {
-      clear: left;
-  }
-  
-  .hex-row.even {
-      margin-left: 145px;
-  }
 
 @media screen and (max-width: 320px){
     .jumbotron {

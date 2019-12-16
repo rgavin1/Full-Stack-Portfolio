@@ -1,18 +1,8 @@
 .restaurantImg {
     background-image: url('../assets/Resturant/Barroco_479.png');
-    background-position: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 400px;
-    max-height: 300px;
-    padding: 0;
-}
-
-@media screen and (max-width: 425px){
-    .restaurantImg {
-        width: 230px;
-        height: 230px;
-    }
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 1000px){

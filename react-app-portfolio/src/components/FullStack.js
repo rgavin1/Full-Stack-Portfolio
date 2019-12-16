@@ -32,7 +32,7 @@ const FullStack = () => {
        </Container>
        <hr className="mt-4" />
        <h3>Description</h3>
-       <p className="text-justify">This web portfolio is an extension of Ramsey's resume. This site provides a convenient way for potential employers' to view projects and inspect code while also allowing Ramsey to expand his skills.
+       <p className="text-justify">This web portfolio is an extension of Ramsey's resume. This site provides a convenient way for potential employers' to view projects and inspect code while also allowing Ramsey to expand his skills. --@firebase sdk and cloud --
        </p>
        </Container>
        <Container className="my-auto pt-3">
@@ -42,6 +42,7 @@ const FullStack = () => {
        <ol>
             <li>
                <p>First-time using GreenSock and Scroll Magic in a project.</p>
+               <p>--Issues with installation of firebase sdk missing @firebase/app and http2 modules</p>
            </li>
        </ol>
        </div>

@@ -1,18 +1,8 @@
 .portfolioImg {
     background-image: url('../assets/Portfolio/WebPortfolio_479.png');
-    background-position: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 300px;
-    padding: 0;
-}
-
-@media screen and (max-width: 425px){
-    .portfolioImg {
-        width: 250px;
-        height: 188px;
-    }
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 1000px){

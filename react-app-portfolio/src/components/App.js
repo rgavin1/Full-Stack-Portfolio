@@ -10,6 +10,7 @@ import WeatherApp from './WeatherApp';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../styles/App.css';
 
+
 const App = () => {
   return (
     <Router>

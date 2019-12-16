@@ -6,6 +6,7 @@ body {
 .App {
     background-color: rgba(0, 0, 0, 1);
     color: snow;
+    overflow-x: hidden;
 }
 
 p {

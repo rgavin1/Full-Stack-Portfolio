@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="overlay">
                 <div className="image-wrapper d-flex justify-content-center flex-wrap">
                     <div className="text-center">
-                        <img className="profilePic" src={ProfilePic} alt="Ramsey Gavin's profile picture 150px by 150px" />
+                        <img className="profilePic" src={ProfilePic} alt="Ramsey Gavin's profile" />
                     </div>
                     <span className="introduction-wrapper">
                         <h3 className="text-center">Hello, I'm Ramsey Gavin.</h3>

@@ -1,11 +1,7 @@
 .KSUImage {
     background-image: url('../assets/Capstone/Capstone_479.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 400px;
-    height: 300px;
-    margin: 0px auto;
+    height: auto;
+    width: 100%;
 }
 
 @media screen and (max-width: 425px){

@@ -3,7 +3,10 @@
 }
 
 .projects div {
-    margin: 25px 0;
+    margin: 25px 15px;
+    overflow: hidden;
+    width: 400px;
+    height: 266px;
 }
 
 .fade-in {

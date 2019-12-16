@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import '../styles/ContactMe.css';
+//import 'FireBaseConfig';
+const firebase = require("firebase");
+// Required for side-effects
+require("firebase/firestore");
+//Get Envirnomental Variable
+require('dotenv').config();
 
 class ContactMe extends Component {
   constructor(props){
@@ -8,11 +14,27 @@ class ContactMe extends Component {
     this.state = {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      display: 'none'
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.deleteForm = this.deleteForm.bind(this);
+  }
+
+  componentDidMount(){
+    if(!firebase.apps.length){
+      firebase.initializeApp({
+        apiKey: process.env.REACT_APP_API_KEY,
+        authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+        databaseURL: process.env.REACT_APP_DB_URL,
+        projectId: "react-portfolio-b231e",
+        storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_APP_ID,
+        measurementId: process.env.REACT_APP_MEASUREMENT_ID
+      });
+    }
   }
 
   handleChange(e){
@@ -23,7 +45,26 @@ class ContactMe extends Component {
 
   handleSubmit(e){
     e.preventDefault();
-    console.log(this.state);
+
+    firebase.firestore().collection("messages").add({
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+    })
+    .then( () => {
+      setTimeout( () => {
+        this.setState({
+          name: '',
+          email: '',
+          message: '',
+          display: 'block'
+        });
+      }, 1000);
+    })
+    .catch( (error) => {
+        console.error("Error", error);
+    });
+  
   }
 
   deleteForm(){
@@ -35,9 +76,19 @@ class ContactMe extends Component {
   }
 
   render(){
+
+    const style = {
+      backgroundColor: 'green',
+      textAlign: 'center',
+      padding: '10px 0',
+      fontWeight: 400,
+      display: `${this.state.display}`,
+    }
+
     return (
       <Container className="mobileForm d-flex py-4 justify-content-around" id="contact">
         <h2 className="px-5 text-center">Lets Connect!</h2>
+        <div style={style}>Message Sent</div>
       <Form className="container border-right border-left px-3" onSubmit={this.handleSubmit} onReset={this.deleteForm} >
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Your Name</Form.Label>

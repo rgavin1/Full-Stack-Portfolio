@@ -8,6 +8,7 @@ import RealEstateImg from '../assets/RealEstate/realestate_479.png';
 import CapstoneImg from '../assets/Capstone/Capstone_479.png';
 import RestaurantImg from '../assets/Resturant/Barroco_New_479.png';
 import PortfolioImg from '../assets/Portfolio/WebPortfolio_479.png';
+import DigitalAgencyImg from '../assets/Digital Agency/digital-agency-orig.png';
 import { Controller, Scene } from 'react-scrollmagic';
 
 class Projects extends Component {
@@ -21,6 +22,11 @@ class Projects extends Component {
             <div title="Real Estate Project" className="projectStyles rounded" >
                 <Link to="/RealEstateProj" aria-label="link to Real Estate Web Page">
                     <Image src={RealEstateImg} className="realEstateImg" aria-label="Screenshot image of website" fluid />
+                </Link>
+            </div>
+            <div title="Digital Agency Project" className="projectStyles rounded" rounded>
+                <Link to="/DigitalAgency" aria-label="Link to PIRTY Application information page">
+                    <Image aria-label="Image of Pirty App"  src={DigitalAgencyImg} fluid />
                 </Link>
             </div>
             <div title="Capstone Project" className="projectStyles rounded" rounded>

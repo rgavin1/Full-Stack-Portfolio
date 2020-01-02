@@ -38,6 +38,9 @@ const Navigation = () => {
         <NavDropdown.Item title="Real Estate Application" >
           <Link to="/RealEstateProj" >Real Estate Application</Link>
         </NavDropdown.Item>
+        <NavDropdown.Item title="Digital Agency Application" >
+          <Link to="/DigitalAgency" >Digital Agency Application</Link>
+        </NavDropdown.Item>
         <NavDropdown.Item title="Kent State Parking Meter" >
           <Link to="/CapstoneProj">Kent State Parking Meter</Link>
         </NavDropdown.Item>

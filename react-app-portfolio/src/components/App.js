@@ -7,6 +7,7 @@ import CapstoneProj from './KentState';
 import PortfolioProj from './FullStack';
 import RestaurantProj from './RestaurantProj';
 import WeatherApp from './WeatherApp';
+import DigitalAgency from './DigitalAgency';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../styles/App.css';
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/PortfolioProj" component={PortfolioProj} />
             <Route path="/RestaurantProj" component={RestaurantProj} />
             <Route path="/WeatherApp" component={WeatherApp} />
+            <Route path="/DigitalAgency" component={DigitalAgency} />
           </Switch>
           <Footer />
       </div>

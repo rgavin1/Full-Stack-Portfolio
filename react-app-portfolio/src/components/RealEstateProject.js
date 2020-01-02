@@ -27,12 +27,12 @@ const RealEstateProject = () => {
            </div>
            <hr className="mt-4"/>
            <Container className="d-flex justify-content-around">
-           <Button title="View" href="https://solid-heaven-261003.firebaseapp.com/" className="d-flex">
+           <Button title="View" href="https://real-estate-app-1570927862095.firebaseapp.com/" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
                }} icon={faExternalLinkAlt} /><div className="my-auto ml-2">View</div>
            </Button>
-           <Button title="Repository" href="" className="d-flex">
+           <Button title="Repository" href="https://github.com/rgavin1/Real-Estate-App" className="d-flex">
                <FontAwesomeIcon style={{
                    fontSize: '30px'
                }} icon={faGithub} /><div className="my-auto ml-2">Github</div>

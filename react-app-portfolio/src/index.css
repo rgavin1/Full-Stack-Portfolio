@@ -4,3 +4,11 @@ html, body {
   overflow-x: hidden;
   font-family: Helvetica, sans-serif;
 }
+
+ol {
+  padding: 0;
+}
+
+.projectContainer {
+  height: 100vh;
+}

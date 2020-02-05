@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from './Navigation';
-import Footer from './Footer';
 import Main from './Main';
 import RealEstateProj from './RealEstateProject';
 import CapstoneProj from './KentState';
@@ -8,6 +7,7 @@ import PortfolioProj from './FullStack';
 import RestaurantProj from './RestaurantProj';
 import WeatherApp from './WeatherApp';
 import DigitalAgency from './DigitalAgency';
+import MovieSearch from './MovieSearchPage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../styles/App.css';
 
@@ -25,8 +25,8 @@ const App = () => {
             <Route path="/RestaurantProj" component={RestaurantProj} />
             <Route path="/WeatherApp" component={WeatherApp} />
             <Route path="/DigitalAgency" component={DigitalAgency} />
+            <Route path="/MovieSearch" component={MovieSearch} />
           </Switch>
-          <Footer />
       </div>
     </Router>
   );

@@ -4,9 +4,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RestaurantProj.css';
-import BootstrapLogo from '../assets/bootstrap-solid.svg';
 import ReactLogo from '../assets/reactjs-icon.svg';
-import DAImg from '../assets/Digital Agency/digital-agency-orig.png';
+import DAImg from '../assets/Digital Agency/pirty-479.png';
 import { Image } from 'react-bootstrap';
 import SassLogo from '../assets/TechnologiesLogos/Sass_Logo_Color.svg';
 import Firebaselogo from '../assets/TechnologiesLogos/Firebase_Logo.svg'

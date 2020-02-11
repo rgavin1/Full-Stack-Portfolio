@@ -20,7 +20,7 @@ class Projects extends Component {
             <h3 className="text-center my-4">Projects</h3>
         <Container className="projects d-flex justify-content-around flex-wrap" id="projects" aria-label="projects react component"> 
             <div title="Movie Search Project" className="projectStyles rounded" >
-                <Link to="/RealEstateProj" aria-label="link to Movie Search Web Application Page">
+                <Link to="/MovieSearch" aria-label="link to Movie Search Web Application Page">
                     <Image src={MovieImage} className="realEstateImg" aria-label="Screenshot image of Movie Search website" fluid />
                 </Link>
             </div>

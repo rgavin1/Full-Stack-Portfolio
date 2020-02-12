@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/RestaurantProj.css';
 import ReactLogo from '../assets/reactjs-icon.svg';
-import DAImg from '../assets/Digital Agency/pirty-479.png';
+import DAImg from '../assets/Digital Agency/pirty-500.png';
 import { Image } from 'react-bootstrap';
 import SassLogo from '../assets/TechnologiesLogos/Sass_Logo_Color.svg';
 import Firebaselogo from '../assets/TechnologiesLogos/Firebase_Logo.svg'

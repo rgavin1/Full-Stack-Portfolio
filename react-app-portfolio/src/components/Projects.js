@@ -7,7 +7,7 @@ import RealEstateImg from '../assets/RealEstate/realestate_479.png';
 import CapstoneImg from '../assets/Capstone/Capstone_479.png';
 import RestaurantImg from '../assets/Resturant/Barroco_New_479.png';
 import PortfolioImg from '../assets/Portfolio/WebPortfolio_479.png';
-import DigitalAgencyImg from '../assets/Digital Agency/pirty-479.png';
+import DigitalAgencyImg from '../assets/Digital Agency/pirty-500.png';
 import MovieImage from '../assets/MovieApp/movie-479.png';
 import { Controller, Scene } from 'react-scrollmagic';
 
